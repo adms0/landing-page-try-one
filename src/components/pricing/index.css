@@ -1,0 +1,57 @@
+.pricing-container {
+  margin-top: 1rem;
+}
+
+.pricing-subheading { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.pricing-subheading p { 
+  text-align: center;
+  max-width: 600px;
+}
+.primary-subheading {
+  font-weight: 700;
+  color: #21BFF7;
+  font-size: 2rem;
+}
+.pricing-card-categories {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.pricing-info {
+  width: 300px;
+  min-height: 350px;
+  background-color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  color: #505050;
+  background-color: #21BFF7; 
+  margin: 1rem 2rem;
+}
+.pricing-info h2 {
+  top: 0
+}
+
+.pricing-info ul {
+  textDecoration:'none',
+}
+
+@media (max-width: 800px) { 
+  .primary-subheading {
+    text-align: center;
+  } 
+  .pricing-subheading { 
+    margin-top: 7rem;
+  }
+  .pricing-card-categories { 
+    margin-top: 1rem;
+  }
+}
