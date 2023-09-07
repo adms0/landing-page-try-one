@@ -5,9 +5,22 @@ import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 import ContactsIcon from '@mui/icons-material/Contacts';
 import {images} from '../../images';
 import './index.css';
+import CreateLoginButton from './CreateLoginButton';
+import MenuIcon from '@mui/icons-material/Menu';
+import {
+  Drawer,
+  Box,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemText,
+  ListItemIcon,
+  Divider,
+} from '@mui/material';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [stateData, setStateData] = useState([]);
   const sideOptions = [
     {
       text: 'Home',
@@ -35,8 +48,32 @@ const Navbar = () => {
         <a href="#about-us">About</a>
         <a href="#pricing">Pricing</a>
         <a href="#contact-us">Contact Us</a>
-        <button className="primary-button">Login</button>
+        {/* <button className="primary-button">Login</button> */}
+        <CreateLoginButton data={stateData} />
       </div>
+      <div className="navbar-menu-container">
+        <MenuIcon onClick={() => setOpen(true)} />
+      </div>
+      <Drawer open={open} onClose={() => setOpen(false)} anchor="right">
+        <Box
+          sx={{width: 250}}
+          role="presentation"
+          onClick={() => setOpen(false)}
+          onKeyDown={() => setOpen(false)}
+        >
+          <List>
+            {sideOptions.map((item) => (
+              <ListItem key={item.text} disablePadding>
+                <ListItemButton>
+                  <ListItemIcon>{item.icon}</ListItemIcon>
+                  <ListItemText primary={item.text} />
+                </ListItemButton>
+              </ListItem>
+            ))}
+          </List>
+          <Divider />
+        </Box>
+      </Drawer>
     </nav>
   );
 };
