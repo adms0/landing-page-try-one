@@ -42,6 +42,7 @@ export const MainDiaog = (props) => {
       <DialogActions>
         {props?.hideCancelButton ? null : (
           <Button
+            data-testid={props.datatesid}
             disableElevation
             sx={{minWidth: 100, margin: '12px'}}
             variant={'outlined'}

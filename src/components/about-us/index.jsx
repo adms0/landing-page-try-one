@@ -8,7 +8,9 @@ const AboutUs = () => {
       </div>
       <div className="about-text-container">
         <p className="primary-subheading">About</p>
-        <h1 className="primary-heading">Rem eos quos laboriosam quidem</h1>
+        <h1 className="primary-heading" data-testid="aboutusid">
+          Rem eos quos laboriosam quidem
+        </h1>
         <p className="primary-text">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus
           nesciunt quod tempora totam labore delectus enim, velit est mollitia

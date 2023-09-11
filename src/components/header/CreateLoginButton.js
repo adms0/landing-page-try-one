@@ -11,6 +11,7 @@ export default function CreateLoginButton(props) {
         disableElevation
         variant="contained"
         color="primary"
+        data-testid="account-user"
         onClick={() => {
           dialogState[1](true);
         }}

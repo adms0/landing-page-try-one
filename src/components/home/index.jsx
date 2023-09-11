@@ -10,12 +10,14 @@ const Home = () => {
           <img src={images.homeBanner} alt={'home-banner'} />
         </div>
         <div className="home-text">
-          <h1 className="primary-heading">Lorem ipsum dolor</h1>
+          <h1 className="primary-heading" data-testid="hometestid">
+            Lorem ipsum dolor
+          </h1>
           <p className="primary-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+            {`Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
             ipsam, quod ipsa repellendus voluptatum unde corrupti alias
             provident quasi autem soluta nam facilis quia. Maxime iusto omnis
-            ipsam illo adipisci?
+            ipsam illo adipisci?`}
           </p>
         </div>
         <div className="home-image">

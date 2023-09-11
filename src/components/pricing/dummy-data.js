@@ -2,29 +2,29 @@ export const PRICING_DATA_CATEGORIES = [
   {
     title: 'BASIC',
     items: [
-      {text: 'Mencatat barang masuk'},
-      {text: 'Mencatat barang keluar'},
-      {text: 'Mencatat hasil keuntungan'},
+      {id: 1, text: 'Mencatat barang masuk'},
+      {id: 2, text: 'Mencatat barang keluar'},
+      {id: 3, text: 'Mencatat hasil keuntungan'},
     ],
   },
   {
     title: 'BUSINESS',
     items: [
-      {text: 'Mencatat barang masuk dan keluar'},
-      {text: 'Mencatat Keuntungan'},
-      {text: 'Dapat menganalisa hasil penjualan dengan CHART'},
-      {text: 'Support 7x24 Jam'},
+      {id: 1, text: 'Mencatat barang masuk dan keluar'},
+      {id: 2, text: 'Mencatat Keuntungan'},
+      {id: 3, text: 'Dapat menganalisa hasil penjualan dengan CHART'},
+      {id: 4, text: 'Support 7x24 Jam'},
     ],
   },
   {
     title: 'ENTREPRENEUR',
     items: [
-      {text: 'Mencatat barang masuk dan keluar'},
-      {text: 'Mencatat Keuntungan'},
-      {text: 'Dapat menganalisa hasil penjualan dengan CHART'},
-      {text: 'Support 7x24 Jam'},
-      {text: 'Export data ke Excel'},
-      {text: 'AI Prediksi penghasilan'},
+      {id: 1, text: 'Mencatat barang masuk dan keluar'},
+      {id: 2, text: 'Mencatat Keuntungan'},
+      {id: 3, text: 'Dapat menganalisa hasil penjualan dengan CHART'},
+      {id: 4, text: 'Support 7x24 Jam'},
+      {id: 5, text: 'Export data ke Excel'},
+      {id: 6, text: 'AI Prediksi penghasilan'},
     ],
   },
 ];

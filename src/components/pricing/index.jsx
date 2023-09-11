@@ -15,8 +15,8 @@ const Pricing = () => {
                 <ul style={{listStyleType: 'none', textAlign: 'left'}}>
                   {e?.items?.map((item, indexItem) => {
                     return (
-                      <li key={indexItem}>
-                        {indexItem + 1} {item.text}
+                      <li key={indexItem} data-testid="listitem">
+                        {item.text}
                       </li>
                     );
                   })}

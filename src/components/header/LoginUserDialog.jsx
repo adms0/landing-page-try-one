@@ -5,7 +5,8 @@ import {Grid, TextField, Typography} from '@mui/material';
 export default function LoginUserDialog(props) {
   const edit = props?.edit;
   const data = props?.data;
-  const [open, setOpen] = props.openCloseState;
+  const openCloseState = props.openCloseState;
+  const [open, setOpen] = openCloseState;
   const [userName, setUserName] = useState(undefined);
   const [userEmail, setUserEmail] = useState(undefined);
 
@@ -21,6 +22,7 @@ export default function LoginUserDialog(props) {
   return (
     <MainDiaog
       showDivider
+      datatesid="button-test"
       open={open}
       title={'Login'}
       okLabel={'Submit'}
@@ -46,6 +48,9 @@ export default function LoginUserDialog(props) {
               const value = e?.target.value;
               setUserName(value);
             }}
+            inputProps={{
+              'data-testid': 'account-name',
+            }}
           />
         </Grid>
         <Grid item xs={12} md={6}>
@@ -61,6 +66,9 @@ export default function LoginUserDialog(props) {
             onChange={(e) => {
               const value = e?.target.value;
               setUserEmail(value);
+            }}
+            inputProps={{
+              'data-tesid': 'account-email',
             }}
           />
         </Grid>
